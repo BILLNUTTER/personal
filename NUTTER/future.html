@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Future Aspirations</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f1faee;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        nav {
+            background: #0a2540;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        header {
+            background: linear-gradient(to right, #1d4ed8, #38bdf8);
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.1em;
+            margin: 0;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        h2 {
+            color: #1d4ed8;
+            margin-top: 30px;
+        }
+
+        ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 12px;
+            transition: color 0.3s, font-weight 0.3s;
+            cursor: default;
+        }
+
+        ul li:hover {
+            color: #0077b6;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="childhood.html">Childhood</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="future.html">Future</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <header>
+        <h1>My Future Aspirations</h1>
+        <p>Career goals and professional vision as a Software Engineer</p>
+    </header>
+
+    <main>
+        <h2>Career Goals</h2>
+        <p>
+            As a Bachelor of Science in Software Engineering student, my goal is to become a skilled software engineer,
+            designing, developing, and maintaining high-quality software solutions. I aspire to contribute to the
+            technology industry by creating innovative applications that solve real-world problems.
+        </p>
+
+        <h2>Areas of Focus</h2>
+        <ul>
+            <li>Web development: building responsive, user-friendly websites and web applications.</li>
+            <li>Software development: designing and implementing reliable software systems for businesses.</li>
+            <li>Problem solving and algorithm design: applying logical reasoning and coding skills to tackle challenges.
+            </li>
+            <li>Continuous learning: keeping up with new technologies, programming languages, and frameworks.</li>
+            <li>Team collaboration: working effectively in project teams to deliver software solutions.</li>
+        </ul>
+
+        <h2>Long-Term Vision</h2>
+        <ul>
+            <li>Secure a professional role in a reputable tech company to grow and contribute meaningfully.</li>
+            <li>Lead projects and mentor junior developers, sharing knowledge and fostering innovation.</li>
+            <li>Achieve financial independence while making an impact through technology and education.</li>
+            <li>Develop software that improves people's lives and supports businesses in achieving their goals.</li>
+        </ul>
+    </main>
+
+    <script>
+        const listItems = document.querySelectorAll("ul li");
+        listItems.forEach(item => {
+            item.addEventListener("click", () => {
+                item.style.backgroundColor = "#d0f0fd";
+                setTimeout(() => {
+                    item.style.backgroundColor = "";
+                }, 500);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

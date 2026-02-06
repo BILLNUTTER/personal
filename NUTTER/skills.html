@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Skills</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #edf6f9;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        nav {
+            background: #0a2540;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        header {
+            background: linear-gradient(to right, #1d4ed8, #38bdf8);
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.1em;
+            margin: 0;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        h2 {
+            color: #1d4ed8;
+            margin-top: 40px;
+        }
+
+        ul {
+            margin-top: 15px;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 12px;
+            transition: color 0.3s;
+        }
+
+        ul li:hover {
+            color: #1d4ed8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a data-page="index.html">Home</a>
+        <a data-page="childhood.html">Childhood</a>
+        <a data-page="education.html">Education</a>
+        <a data-page="skills.html">Skills</a>
+        <a data-page="future.html">Future</a>
+        <a data-page="contact.html">Contact</a>
+    </nav>
+
+    <header>
+        <h1>Skills & Technical Abilities</h1>
+        <p>Knowledge and practical skills developed through Software Engineering</p>
+    </header>
+
+    <main>
+
+        <h2>Software Development Skills</h2>
+        <p>
+            As a Bachelor of Science in Software Engineering student, I have developed
+            a strong foundation in designing, building, and maintaining software systems.
+            My training emphasizes both theoretical understanding and practical application.
+        </p>
+        <ul>
+            <li>
+                <strong>HTML, CSS, and JavaScript:</strong> Design and develop responsive, user-friendly websites and
+                web applications with structured layouts and interactive features.
+            </li>
+            <li>
+                <strong>Basic Programming Concepts:</strong> Understanding of algorithms, data structures, and logical
+                problem-solving used in software development.
+            </li>
+            <li>
+                <strong>System Analysis and Design:</strong> Analyze user requirements and design software solutions
+                that address real-world problems.
+            </li>
+        </ul>
+
+        <h2>Problem Solving & Analytical Skills</h2>
+        <p>
+            My background in mathematics and science has strengthened my ability to approach problems logically and
+            systematically.
+        </p>
+        <ul>
+            <li>Strong analytical thinking for breaking down complex problems into manageable solutions.</li>
+            <li>Ability to debug code, identify errors, and improve system efficiency.</li>
+            <li>Application of mathematical reasoning in computing and software logic.</li>
+        </ul>
+
+        <h2>Collaboration & Communication</h2>
+        <p>
+            Software engineering involves teamwork and clear communication.
+            I have developed interpersonal skills that support collaborative work.
+        </p>
+        <ul>
+            <li>Work effectively in team-based projects and group assignments.</li>
+            <li>Clearly communicate technical ideas to both technical and non-technical audiences.</li>
+            <li>Learn, adapt, and accept feedback to improve performance.</li>
+        </ul>
+
+        <h2>What I Can Do</h2>
+        <p>
+            With my current skills and ongoing training, I am capable of:
+        </p>
+        <ul>
+            <li>Designing and developing simple to intermediate websites and web applications.</li>
+            <li>Assisting in software development projects and quickly learning new technologies.</li>
+            <li>Applying programming knowledge to solve academic and real-life problems.</li>
+            <li>Continuously improving technical skills through practice and self-learning.</li>
+        </ul>
+
+    </main>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                const page = link.getAttribute('data-page');
+                if (page) {
+                    window.location.href = page;
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

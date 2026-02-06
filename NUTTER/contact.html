@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        nav {
+            background: #0a2540;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        main {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #0077b6;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+
+        .contact-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .contact-buttons button {
+            width: 100%;
+            max-width: 300px;
+            padding: 15px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(90deg, #0077b6, #00b4d8);
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .contact-buttons button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (min-width: 600px) {
+            .contact-buttons {
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .contact-buttons button {
+                flex: 1 1 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="childhood.html">Childhood</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="future.html">Future</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <h1>Contact Me</h1>
+
+        <div class="contact-buttons">
+            <button data-action="email">Send Email</button>
+            <button data-action="x">Visit X / Twitter</button>
+            <button data-action="instagram">Visit Instagram</button>
+            <button data-action="whatsapp">Chat on WhatsApp</button>
+        </div>
+    </main>
+
+    <script>
+        const links = {
+            email: 'mailto:omayiocalvin59@gmail.com',
+            x: 'https://x.com/Billnutter43778',
+            instagram: 'https://www.instagram.com/nutterx_?igsh=MTkwcWNya2Y0bTgzcw==',
+            whatsapp: 'https://wa.me/254758891491'
+        };
+
+        document.querySelectorAll('.contact-buttons button').forEach(button => {
+            button.addEventListener('click', () => {
+                const action = button.getAttribute('data-action');
+                const url = links[action];
+                if (action === 'email') {
+                    window.location.href = url;
+                } else {
+                    window.open(url, '_blank');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
